@@ -19,3 +19,8 @@ dataset/
 *.pth
 .DS_Store
 Thumbs.db
+requirements-freeze.txt
+build/
+dist/
+*.egg-info/
+.docker/

@@ -1,0 +1,19 @@
+name: ee_graph
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.7.1
+  - numpy=1.26.4
+  - pandas=2.3.1
+  - scikit-learn=1.7.1
+  - matplotlib=3.10.3
+  - seaborn=0.13.2
+  - networkx=3.4.2
+  - pyyaml=6.0.2
+  - tqdm=4.67.1
+  - pip
+  - pip:
+    - torch==2.7.1

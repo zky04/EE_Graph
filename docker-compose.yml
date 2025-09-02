@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ee-graph:
+    build: .
+    container_name: ee_graph_analyzer
+    volumes:
+      - ./dataset:/app/dataset:ro
+      - ./results:/app/results
+      - ./visualization:/app/visualization
+      - ./logs:/app/logs
+    environment:
+      - PYTHONPATH=/app
+    working_dir: /app
+    command: python main.py
+    restart: unless-stopped

@@ -1,0 +1,25 @@
+{
+  "0": {
+    "cluster_id": "0_0_0",
+    "parent_level2": "level2_0",
+    "timestamps": [
+      "HU_20241120_0015_mac_pp",
+      "HU_20241120_0030_mac_pp",
+      "HU_20241120_0045_mac_pp",
+      "HU_20241120_0100_mac_pp",
+      "HU_20241120_0115_mac_pp",
+      "HU_20241120_0130_mac_pp",
+      "HU_20241120_0145_mac_pp",
+      "HU_20241120_0200_mac_pp",
+      "HU_20241120_0215_mac_pp",
+      "HU_20241120_0230_mac_pp"
+    ],
+    "sample_count": 10,
+    "edge_analysis": {
+      "common_edge_count": 294,
+      "avg_unique_edge_count": 0.0,
+      "common_edge_ratio": 1.0,
+      "clustering_score": 1.0
+    }
+  }
+}

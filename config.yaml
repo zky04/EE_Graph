@@ -1,0 +1,89 @@
+system:
+  name: "EE图数据三层次聚类分析系统"
+  version: "1.0"
+  description: "基于电网图数据的智能聚类分析系统"
+
+data_paths:
+  processed_data_dir: "dataset"
+  output_dir: "results"
+  logs_dir: "logs"
+  reports_dir: "reports"
+  visualization_dir: "visualization"
+
+preprocessing:
+  input_dir: "dataset"
+  output_dir: "dataset"
+  input_filename: "new.txt"
+  output_filename: "g.pt"
+  feature_dimensions: 5
+  encoding: "utf-8"
+  
+  default_estimates:
+    transformer_resistance: 0.01
+    transformer_reactance: 0.1
+    line_capacity_mva: 100.0
+    line_voltage_kv: 110.0
+
+pipeline:
+  enable_preprocessing: false
+  enable_validation: true
+  enable_clustering: true
+  enable_topology_analysis: true
+  enable_visualization: true
+
+level1:
+  bus_categories:
+    group_1: 610
+    group_2: 615
+    group_3: 620
+    group_4: 625
+    group_5: 630
+    group_6: 635
+    group_7: 640
+    group_8: 645
+    group_9: 650
+    group_10: 999999
+
+level2:
+  similarity_threshold: 0.05
+  similarity_weights:
+    connection_signature: 0.5
+    generator_count: 0.2
+    bus_overlap: 0.2
+    avg_connections: 0.1
+
+level3:
+  common_edges:
+    min_count: 0
+    min_ratio: 0.0
+  unique_edges:
+    max_count: 2
+    max_ratio: 0.005
+  scoring:
+    common_edge_weight: 0.95
+    unique_edge_penalty: 0.05
+
+performance:
+  enable_graph_cache: true
+  max_cache_size: 1000
+  max_memory_gb: 8
+  show_progress_bar: true
+
+output:
+  save_json: true
+  save_csv: true
+  generate_html: true
+  detailed_reports: true
+  timestamp_suffix: true
+
+visualization:
+  html_theme: "modern"
+  enable_interactive_plots: true
+  enable_cluster_browser: true
+  enable_topology_analyzer: true
+  enable_system_dashboard: true
+
+logging:
+  level: "INFO"
+  console_output: true
+  file_output: true

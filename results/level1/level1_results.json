@@ -1,0 +1,23 @@
+{
+  "0": {
+    "cluster_id": "level1_0",
+    "bus_group": "group_4",
+    "timestamps": [
+      "HU_20241120_0015_mac_pp",
+      "HU_20241120_0030_mac_pp",
+      "HU_20241120_0045_mac_pp",
+      "HU_20241120_0100_mac_pp",
+      "HU_20241120_0115_mac_pp",
+      "HU_20241120_0130_mac_pp",
+      "HU_20241120_0145_mac_pp",
+      "HU_20241120_0200_mac_pp",
+      "HU_20241120_0215_mac_pp",
+      "HU_20241120_0230_mac_pp"
+    ],
+    "sample_count": 10,
+    "bus_count_range": [
+      629,
+      629
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "0": {
+    "cluster_id": "level2_0",
+    "parent_level1": "level1_0",
+    "timestamps": [
+      "HU_20241120_0015_mac_pp",
+      "HU_20241120_0030_mac_pp",
+      "HU_20241120_0045_mac_pp",
+      "HU_20241120_0100_mac_pp",
+      "HU_20241120_0115_mac_pp",
+      "HU_20241120_0130_mac_pp",
+      "HU_20241120_0145_mac_pp",
+      "HU_20241120_0200_mac_pp",
+      "HU_20241120_0215_mac_pp",
+      "HU_20241120_0230_mac_pp"
+    ],
+    "sample_count": 10
+  }
+}
